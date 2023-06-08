@@ -10,7 +10,8 @@
 </head>
 <body>
   <input id="inp-el" oninput="convertTemp()" type="text"><br>
-  <label for="sel-one">From</label>
+  <div id="sel-div">
+    <label for="sel-one">From</label>
   <select onchange="convertTemp()" name="" id="sel-one">
     <option value="celsius">Celsius</option>
     <option value="fahrenheit">Fahrenheit</option>
@@ -28,6 +29,8 @@
     <option value="ke">Kelvin</option>
     
   </select><br>
+  </div>
+  
   <p id="ans-el"></p>
   <button onclick="clearMe()" id="cl">Clear</button>
   <script src="temperature.js"></script>
